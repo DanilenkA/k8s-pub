@@ -11,10 +11,10 @@
 " caps osd = "allow rwx pool=ceph-volume" "
 
 1. # install need app
-   sudo apt update && sudo apt install -y python3-pip git ansible
-pip install --upgrade pip
+   sudo apt update && sudo apt install -y python3-pip git
+   pip install --upgrade pip
 2. # Clone this repository
-    git clone  https://github.com/DanilenkA/k8spython3 -m venv ~/kubespray-venv-pub.git && cd k8s-pub
+    git clone  https://github.com/DanilenkA/k8spub.git && cd k8s-pub
 3. # install environment
    python3 -m venv ./kubespray-venv
    source /kubespray-venv/bin/activate
