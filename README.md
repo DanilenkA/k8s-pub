@@ -23,9 +23,13 @@
    pip install -r requirements.txt
 4. # Change the configuration to suit your infrastructure
    inventory/sample inventory/mycluster
+   
    inventory/mycluster/group_vars/all.yml
+   
    inventory/mycluster/group_vars/k8s_cluster/k8s-cluster.yml
+   
    roles/kubernetes-apps/csi_driver/ceph/ceph_secret.yaml
+   
 6. # deploy your cluster (here is the user k8s, change it to yours)
    ansible-playbook -i inventory/mycluster/inventory.ini cluster.yml -b -v
 7. # check
