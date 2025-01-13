@@ -58,6 +58,8 @@
    kubectl get pods -n monitoring | grep prometheus
    
    kubectl describe sc
+
+9. # !!!!!! don't forget to add inventory and all credentials to .gitignore !!!!!!
    
 
    
